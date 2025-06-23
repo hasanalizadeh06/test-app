@@ -4,6 +4,7 @@ import db from "@/../lib/db";
 
 export default function Home() {
   const users = db.getAll() as User[];
+  console.log("Users from DB:", users);
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-200 to-purple-300 p-24">
       <div className="bg-white rounded-3xl shadow-2xl p-20 max-w-4xl w-full">
